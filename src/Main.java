@@ -1,10 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        User john = new User("john",1954,2,18);
+        User john = new User("John", 1954, 12, 18);
         john.displayInfo();
-        Admin nicolas = new Admin("nicolas",1964,1,7);
+        john.displayHappyBirthday();
+        System.out.println();
+
+        Admin nicolas = new Admin("Nicolas", 1964, 12, 18);
         nicolas.displayInfo();
-        nicolas.displayInfo(true);
-        nicolas.displayInfo(false);
+        nicolas.displayHappyBirthday();
     }
 }

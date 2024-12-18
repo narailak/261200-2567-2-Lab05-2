@@ -16,6 +16,17 @@ public class User {
         System.out.println("Your name: " + name);
         System.out.println("Your birthday: " + dob);
     }
+    public boolean isBirthday() {
+        if (LocalDate.now().getDayOfMonth() == dob.getDayOfMonth() && LocalDate.now().getMonth() == dob.getMonth())
+            return true;
+        else
+            return false;
+    }
+    public void displayHappyBirthday() {
+        if(isBirthday())
+            System.out.println("Happy birthday " + this.name + "!");
+    }
+
 
 
 }

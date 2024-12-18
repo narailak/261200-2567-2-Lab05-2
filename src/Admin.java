@@ -20,6 +20,11 @@ public class Admin extends User {
         }else {
             System.out.println("Your name: " + name);
         }
-
+    }
+    public void displayHappyBirthday() {
+        int age = LocalDate.now().getYear() - dob.getYear();
+        if (isBirthday()) {
+            System.out.println("Happy birthday " + this.name + "! You are " + age + "!");
+        }
     }
 }
